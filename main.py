@@ -85,7 +85,6 @@ def worker(authors ,start, end):
         pass
         #print("нет историй для просмотра")
 
-#login, password = '+919536190157', 'qazzaq3221'
 login = os.environ.get('login')
 password = os.environ.get('password')
 
@@ -121,3 +120,4 @@ if __name__=='__main__':
             threading.Thread(target=worker, args=(authors_list ,start, end)).start()
             start += 300
             end += 300
+         time.sleep(1500)

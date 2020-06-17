@@ -134,7 +134,7 @@ if __name__=='__main__':
             end += 300
         start = 0
         end = 300
-        send_message(token_bot, f'Круг завершен. Просмотрено {stories_count} историй | Общее количество просмотренных историй: {all_stories_count}')
-        stories_count = 0
         time.sleep(1500)
+        send_message(token_bot,f'Круг завершен. Просмотрено {stories_count} историй | Общее количество просмотренных историй: {all_stories_count}')
+        stories_count = 0
 

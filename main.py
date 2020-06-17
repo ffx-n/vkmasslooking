@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import re,vk_api,os,sys,random, requests, time, threading, random
 from vkauth import *
 from bs4 import BeautifulSoup as bs

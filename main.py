@@ -71,11 +71,6 @@ def pars_users(zapros, megatoken):
                       }
             r = requests.get('https://api.vk.com/method/stories.search?', params=params)
             count = r.json()['response']['items']
-            if int(r.json()['response']['count'])>=55:
-                #print(f'Записываю слово {j} | Найдено историй : {r.json()["response"]["count"]}')
-                results = open('good_words.txt', 'a')
-                results.write(f'{j}\n')
-                results.close()
             for i in count:
                 if i[0]['id'] not in seen_stories:
                     stories.append(i[0]['id'])

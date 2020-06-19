@@ -7,8 +7,7 @@ all_stories_count = 0
 start = 0
 end = 300
 seen_stories = []
-token_bot = '3b272149e846cb2d19de6579676c40d9e88a53146d41cfa35eac83346d649c195aa5ffb3b37cea1444f33'
-#token_bot = os.environ.get('tokenbot')
+token_bot = os.environ.get('tokenbot')
 
 
 try:
@@ -115,9 +114,9 @@ def worker(authors ,start, end):
         pass
         #print("нет историй для просмотра")
 
-login, password = '+919536190157', 'qazzaq3221'
-#login = os.environ.get('login')
-#password = os.environ.get('password')
+
+login = os.environ.get('login')
+password = os.environ.get('password')
 
 vk_session = vk_api.VkApi(
     login, password,

@@ -103,7 +103,7 @@ def get_subs(id, token):
     return sub_list
 
 def worker(authors ,start, end):
-    global stories_count, all_stories_count
+    global stories_count, all_stories_count, seen_stories
     for i in range(start,end):
         print(f'Смотрю историю {authors[i]} | # {users_list[i]}')
         watch_story(authors[i],users_list[i],read_token)
